@@ -21,138 +21,141 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_531fb40746474e1dc1d66d5bce865ee791158529249ff50ab922a66d4c384ead = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_531fb40746474e1dc1d66d5bce865ee791158529249ff50ab922a66d4c384ead->enter($__internal_531fb40746474e1dc1d66d5bce865ee791158529249ff50ab922a66d4c384ead_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
+        $__internal_ce0b15d7ecffebb0c1617b0a5e7f8d766fcb7a2d9367a193de3d44eeb58df512 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ce0b15d7ecffebb0c1617b0a5e7f8d766fcb7a2d9367a193de3d44eeb58df512->enter($__internal_ce0b15d7ecffebb0c1617b0a5e7f8d766fcb7a2d9367a193de3d44eeb58df512_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
 
-        $__internal_83b8ce33f4d1595fe6235233f7cc87768da93c33435f20be415c2cc7177a94ba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_83b8ce33f4d1595fe6235233f7cc87768da93c33435f20be415c2cc7177a94ba->enter($__internal_83b8ce33f4d1595fe6235233f7cc87768da93c33435f20be415c2cc7177a94ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
+        $__internal_71b34f024163ae60deb620a5ff42b7f7924ce73ec9bb52dbf841e478e7e615a0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_71b34f024163ae60deb620a5ff42b7f7924ce73ec9bb52dbf841e478e7e615a0->enter($__internal_71b34f024163ae60deb620a5ff42b7f7924ce73ec9bb52dbf841e478e7e615a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
 
+        // line 2
+        $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->setTheme(($context["edit_form"] ?? $this->getContext($context, "edit_form")), array(0 => "form/formthemeoverwrite.html.twig"));
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_531fb40746474e1dc1d66d5bce865ee791158529249ff50ab922a66d4c384ead->leave($__internal_531fb40746474e1dc1d66d5bce865ee791158529249ff50ab922a66d4c384ead_prof);
+        $__internal_ce0b15d7ecffebb0c1617b0a5e7f8d766fcb7a2d9367a193de3d44eeb58df512->leave($__internal_ce0b15d7ecffebb0c1617b0a5e7f8d766fcb7a2d9367a193de3d44eeb58df512_prof);
 
         
-        $__internal_83b8ce33f4d1595fe6235233f7cc87768da93c33435f20be415c2cc7177a94ba->leave($__internal_83b8ce33f4d1595fe6235233f7cc87768da93c33435f20be415c2cc7177a94ba_prof);
+        $__internal_71b34f024163ae60deb620a5ff42b7f7924ce73ec9bb52dbf841e478e7e615a0->leave($__internal_71b34f024163ae60deb620a5ff42b7f7924ce73ec9bb52dbf841e478e7e615a0_prof);
 
     }
 
-    // line 3
+    // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_17744cbfadd016d8ac525d9510422d7a88b30dce8c0579a84920baacd154ab24 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_17744cbfadd016d8ac525d9510422d7a88b30dce8c0579a84920baacd154ab24->enter($__internal_17744cbfadd016d8ac525d9510422d7a88b30dce8c0579a84920baacd154ab24_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f932a5819044c621a0a5ba3137c5e8cd7c91c68cbb9a5355a1f4604c53b19804 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f932a5819044c621a0a5ba3137c5e8cd7c91c68cbb9a5355a1f4604c53b19804->enter($__internal_f932a5819044c621a0a5ba3137c5e8cd7c91c68cbb9a5355a1f4604c53b19804_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_234c266438e578d7b54ddfcbd9dd2026428ff9f18cd7015578ada1831729f6af = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_234c266438e578d7b54ddfcbd9dd2026428ff9f18cd7015578ada1831729f6af->enter($__internal_234c266438e578d7b54ddfcbd9dd2026428ff9f18cd7015578ada1831729f6af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_b7fb9470f75613b5e92a0d779eb50e4a72c9859bfc579b057192a50a9ebe2059 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b7fb9470f75613b5e92a0d779eb50e4a72c9859bfc579b057192a50a9ebe2059->enter($__internal_b7fb9470f75613b5e92a0d779eb50e4a72c9859bfc579b057192a50a9ebe2059_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 4
+        // line 5
         echo "    <div class=\"jumbotron\">
         <h2>User edit</h2>
     </div>
 
     ";
-        // line 8
+        // line 9
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["edit_form"] ?? $this->getContext($context, "edit_form")), 'form_start');
         echo "
         ";
-        // line 10
+        // line 11
         echo "    <div class=\"form-group\">
         ";
-        // line 11
+        // line 12
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "username", array()), 'label');
         echo "
         ";
-        // line 12
+        // line 13
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "username", array()), 'widget');
         echo "
         ";
-        // line 13
+        // line 14
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "username", array()), 'errors');
         echo "
     </div>
     <div class=\"form-group\">
         ";
-        // line 16
+        // line 17
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "firstname", array()), 'label');
         echo "
         ";
-        // line 17
+        // line 18
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "firstname", array()), 'widget');
         echo "
         ";
-        // line 18
+        // line 19
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "firstname", array()), 'errors');
         echo "
     </div>
     <div class=\"form-group\">
         ";
-        // line 21
+        // line 22
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "lastname", array()), 'label');
         echo "
         ";
-        // line 22
+        // line 23
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "lastname", array()), 'widget');
         echo "
         ";
-        // line 23
+        // line 24
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "lastname", array()), 'errors');
         echo "
     </div>
     <div class=\"form-group\">
         ";
-        // line 26
+        // line 27
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "email", array()), 'label');
         echo "
         ";
-        // line 27
+        // line 28
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "email", array()), 'widget');
         echo "
         ";
-        // line 28
+        // line 29
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute(($context["edit_form"] ?? $this->getContext($context, "edit_form")), "email", array()), 'errors');
         echo "
     </div>
     ";
-        // line 31
-        echo "        ";
         // line 32
         echo "        ";
         // line 33
         echo "        ";
         // line 34
-        echo "    ";
+        echo "        ";
         // line 35
+        echo "    ";
+        // line 36
         echo "        <input type=\"submit\" value=\"Edit\" />
     ";
-        // line 36
+        // line 37
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["edit_form"] ?? $this->getContext($context, "edit_form")), 'form_end');
         echo "
 
     <ul>
         <li>
             <a href=\"";
-        // line 40
+        // line 41
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             ";
-        // line 43
+        // line 44
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 45
+        // line 46
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
         echo "
         </li>
     </ul>
 ";
         
-        $__internal_234c266438e578d7b54ddfcbd9dd2026428ff9f18cd7015578ada1831729f6af->leave($__internal_234c266438e578d7b54ddfcbd9dd2026428ff9f18cd7015578ada1831729f6af_prof);
+        $__internal_b7fb9470f75613b5e92a0d779eb50e4a72c9859bfc579b057192a50a9ebe2059->leave($__internal_b7fb9470f75613b5e92a0d779eb50e4a72c9859bfc579b057192a50a9ebe2059_prof);
 
         
-        $__internal_17744cbfadd016d8ac525d9510422d7a88b30dce8c0579a84920baacd154ab24->leave($__internal_17744cbfadd016d8ac525d9510422d7a88b30dce8c0579a84920baacd154ab24_prof);
+        $__internal_f932a5819044c621a0a5ba3137c5e8cd7c91c68cbb9a5355a1f4604c53b19804->leave($__internal_f932a5819044c621a0a5ba3137c5e8cd7c91c68cbb9a5355a1f4604c53b19804_prof);
 
     }
 
@@ -168,7 +171,7 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
 
     public function getDebugInfo()
     {
-        return array (  146 => 45,  141 => 43,  135 => 40,  128 => 36,  125 => 35,  123 => 34,  121 => 33,  119 => 32,  117 => 31,  112 => 28,  108 => 27,  104 => 26,  98 => 23,  94 => 22,  90 => 21,  84 => 18,  80 => 17,  76 => 16,  70 => 13,  66 => 12,  62 => 11,  59 => 10,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  149 => 46,  144 => 44,  138 => 41,  131 => 37,  128 => 36,  126 => 35,  124 => 34,  122 => 33,  120 => 32,  115 => 29,  111 => 28,  107 => 27,  101 => 24,  97 => 23,  93 => 22,  87 => 19,  83 => 18,  79 => 17,  73 => 14,  69 => 13,  65 => 12,  62 => 11,  58 => 9,  52 => 5,  43 => 4,  33 => 1,  31 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -182,6 +185,7 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'base.html.twig' %}
+{% form_theme edit_form 'form/formthemeoverwrite.html.twig' %}
 
 {% block body %}
     <div class=\"jumbotron\">
