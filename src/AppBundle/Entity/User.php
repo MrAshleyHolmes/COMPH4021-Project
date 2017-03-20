@@ -5,7 +5,7 @@ namespace AppBundle\Entity;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 /**
- *
+ * The above was added by me
  */
 use Doctrine\ORM\Mapping as ORM;
 
@@ -77,6 +77,13 @@ class User
      */
     private $password;
 
+    /**
+     * @return null
+     */
+    public function getSalt()
+    {
+        return null;
+    }
 
     /**
      * Get id

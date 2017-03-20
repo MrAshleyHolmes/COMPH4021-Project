@@ -461,7 +461,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>MDnNZBf6XN</argument>
                 <argument>0</argument>
-                <argument>Qn+eBSqXKrmVje-Kdts7pf</argument>
+                <argument>NdNWIwRrJmI5yDq-dcZKtX</argument>
                 <argument>/Users/ashleyholmes/Sites/COMPH4021-Project/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -629,7 +629,7 @@
           <tag name="monolog.logger" channel="cache"/>
           <argument>OFoLHcbwYj</argument>
           <argument>null</argument>
-          <argument>Qn+eBSqXKrmVje-Kdts7pf</argument>
+          <argument>NdNWIwRrJmI5yDq-dcZKtX</argument>
           <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
           <factory class="Symfony\Component\PropertyAccess\PropertyAccessor" method="createCache"/>
         </service>
@@ -650,7 +650,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>6XnRDn8+l0</argument>
       <argument>0</argument>
-      <argument>Qn+eBSqXKrmVje-Kdts7pf</argument>
+      <argument>NdNWIwRrJmI5yDq-dcZKtX</argument>
       <argument>/Users/ashleyholmes/Sites/COMPH4021-Project/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -660,7 +660,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>rGJdopL22i</argument>
       <argument>0</argument>
-      <argument>Qn+eBSqXKrmVje-Kdts7pf</argument>
+      <argument>NdNWIwRrJmI5yDq-dcZKtX</argument>
       <argument>/Users/ashleyholmes/Sites/COMPH4021-Project/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1653,7 +1653,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>58d02da5eed035.58030232</argument>
+            <argument>58d0569be2ed69.75607091</argument>
           </service>
         </argument>
       </argument>
@@ -1801,7 +1801,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>58d02da5eed035.58030232</argument>
+            <argument>58d0569be2ed69.75607091</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2681,7 +2681,14 @@
       <autowiring-type>Doctrine\Common\Annotations\Reader</autowiring-type>
     </service>
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
-      <argument type="collection"/>
+      <argument type="collection">
+        <argument key="AppBundle\Entity\User" type="collection">
+          <argument key="class">Symfony\Component\Security\Core\Encoder\BCryptPasswordEncoder</argument>
+          <argument key="arguments" type="collection">
+            <argument>13</argument>
+          </argument>
+        </argument>
+      </argument>
     </service>
     <service id="security.password_encoder" class="Symfony\Component\Security\Core\Encoder\UserPasswordEncoder">
       <argument type="service" id="security.encoder_factory"/>

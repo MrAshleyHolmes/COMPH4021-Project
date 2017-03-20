@@ -8,27 +8,31 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-/**
- * These were manually added to the class
- */
 use Faker;
 use AppBundle\Entity\User;
 use Doctrine\Common\Persistence\ObjectManager;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Doctrine\Common\DataFixtures\FixtureInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class PopulateUserTable implements FixtureInterface/*, ContainerAwareInterface*/
+/**
+ * These were manually added to the class
+ */
+
+
+class PopulateUserTable implements FixtureInterface, ContainerAwareInterface
 {
     /**
-     * @var ContainerInterface
+     * @var
      */
-//    private $Container;
+    private $container;
 
     public function load(ObjectManager $manager)
     {
         // TODO: Implement load() method.
         $faker = Faker\Factory::create();
 
-        for ($x = 0; $x <= 1000; $x++) {
+        for ($x = 0; $x <= 74; $x++) {
 
             $userAdmin = new User();
             $userAdmin->setUsername($faker->userName);
@@ -36,7 +40,7 @@ class PopulateUserTable implements FixtureInterface/*, ContainerAwareInterface*/
             $userAdmin->setLastname($faker->lastName);
             $userAdmin->setEmail($faker->email);
             $userAdmin->setPassword($faker->password);
-            /*$userAdmin->setPassword($this->hashPassword($userAdmin, $faker->password));*/
+            $userAdmin->setPassword($this->hashPassword($userAdmin, $faker->password));
 
             $manager->persist($userAdmin);
         }
@@ -46,22 +50,27 @@ class PopulateUserTable implements FixtureInterface/*, ContainerAwareInterface*/
     /**
      * @param ContainerInterface|null $container
      */
-/*    public function setContainer(ContainerInterface $container = null)
+    public function setContainer(ContainerInterface $container = null)
     {
         // TODO: Implement setContainer() method.
         $this->container = $container;
-    }*/
+    }
 
     /**
      * @param User $user
      * @param $thePassword
-     * @return mixed]
+     * @return mixed
      */
-/*    public function hashPassword(User $user, $thePassword)
+    public function hashPassword(User $user, $thePassword)
     {
         $encoder = $this->container->get('security.encoder_factory')
             ->getEncoder($user);
 
-        return $encoder->encoderPassword($thePassword, $user->getSalt());
-    }*/
+        /**
+         * bcrypt comes with its own salt. PHP has a built in mechanism that it uses to create salt and it puts salt
+         * in the String that it returns so we do not need salt but Symfony requires salt, we have to go ahead and use
+         * all the methods that are required
+         */
+        return $encoder->encodePassword($thePassword, $user->getSalt());
+    }
 }
