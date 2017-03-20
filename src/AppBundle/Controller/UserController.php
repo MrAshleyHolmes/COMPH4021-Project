@@ -46,6 +46,13 @@ class UserController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
+            /**
+             * This is an addition which calls the method which was created in the UserManager
+             */
+            $this->get('app_bundle.user_manager')
+                ->setUserPassword($user, $user->getPassword());
+
             $em->persist($user);
             $em->flush($user);
 

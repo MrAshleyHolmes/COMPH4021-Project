@@ -15,11 +15,6 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-/**
- * These were manually added to the class
- */
-
-
 class PopulateUserTable implements FixtureInterface, ContainerAwareInterface
 {
     /**

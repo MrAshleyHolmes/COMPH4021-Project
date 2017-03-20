@@ -3,10 +3,8 @@
 namespace AppBundle\Entity;
 
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-/**
- * The above was added by me
- */
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -20,7 +18,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @UniqueEntity("username", message="That username is already in use")
  * @UniqueEntity("email", message="That email is already in use")
  */
-class User
+class User implements UserInterface
 {
     /**
      * @var int
@@ -213,6 +211,38 @@ class User
     public function getPassword()
     {
         return $this->password;
+    }
+
+    /**
+     * Removes sensitive data from the user.
+     *
+     * This is important if, at any given point, sensitive information like
+     * the plain-text password is stored on this object.
+     */
+    public function eraseCredentials()
+    {
+
+    }
+
+    /**
+     * Returns the roles granted to the user.
+     *
+     * <code>
+     * public function getRoles()
+     * {
+     *     return array('ROLE_USER');
+     * }
+     * </code>
+     *
+     * Alternatively, the roles might be stored on a ``roles`` property,
+     * and populated in any number of different ways when the user object
+     * is created.
+     *
+     * @return (Role|string)[] The user roles
+     */
+    public function getRoles()
+    {
+        return array('ROLE_USER');
     }
 }
 
