@@ -114,6 +114,68 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
+        if (0 === strpos($pathinfo, '/admin')) {
+            // admin_index
+            if (rtrim($pathinfo, '/') === '/admin') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_admin_index;
+                }
+
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'admin_index');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::indexAction',  '_route' => 'admin_index',);
+            }
+            not_admin_index:
+
+            // admin_new
+            if ($pathinfo === '/admin/new') {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_admin_new;
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\UserController::newAction',  '_route' => 'admin_new',);
+            }
+            not_admin_new:
+
+            // admin_show
+            if (preg_match('#^/admin/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_admin_show;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_show')), array (  '_controller' => 'AppBundle\\Controller\\UserController::showAction',));
+            }
+            not_admin_show:
+
+            // admin_edit
+            if (preg_match('#^/admin/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                    goto not_admin_edit;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_edit')), array (  '_controller' => 'AppBundle\\Controller\\UserController::editAction',));
+            }
+            not_admin_edit:
+
+            // admin_delete
+            if (preg_match('#^/admin/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_admin_delete;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_delete')), array (  '_controller' => 'AppBundle\\Controller\\UserController::deleteAction',));
+            }
+            not_admin_delete:
+
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }
