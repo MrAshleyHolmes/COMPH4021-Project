@@ -2,6 +2,8 @@
 
 namespace AppBundle\Entity;
 
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +11,11 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="user")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
+ *
+ * Turn off UniqueEntity if using same email and username, this can be set as one argument
+ *
+ * @UniqueEntity("username", message="That username is already in use")
+ * @UniqueEntity("email", message="That email is already in use")
  */
 class User
 {
@@ -25,6 +32,9 @@ class User
      * @var string
      *
      * @ORM\Column(name="username", type="string", length=80)
+     * @Assert\NotBlank(message="You must have a username");
+     * @Assert\Regex("/^[A-Za-z0-9_.\-]+$/", message = "
+     * Name must be only letters and/or numbers with optional periods, dashes, and underscores")
      */
     private $username;
 
@@ -32,6 +42,9 @@ class User
      * @var string
      *
      * @ORM\Column(name="firstname", type="string", length=80)
+     * @Assert\NotBlank(message="Firstname is required");
+     * @Assert\Regex("/^[A-Za-z\-'']+$/", message = "
+     * Name must be only letters and optional dashes, and apostrophes")
      */
     private $firstname;
 
@@ -39,6 +52,9 @@ class User
      * @var string
      *
      * @ORM\Column(name="lastname", type="string", length=80)
+     * @Assert\NotBlank(message="Lastname is required");
+     * @Assert\Regex("/^[A-Za-z\-'']+$/", message = "
+     * Name must be only letters and optional dashes, and apostrophe")
      */
     private $lastname;
 
@@ -46,6 +62,7 @@ class User
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=80)
+     * @Assert\NotBlank(message="Email is required");
      */
     private $email;
 
@@ -53,6 +70,7 @@ class User
      * @var string
      *
      * @ORM\Column(name="password", type="string", length=80)
+     * @Assert\NotBlank(message="Password is required");
      */
     private $password;
 

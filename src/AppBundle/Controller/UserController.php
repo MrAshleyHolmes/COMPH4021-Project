@@ -85,6 +85,11 @@ class UserController extends Controller
         $editForm = $this->createForm('AppBundle\Form\UserType', $user);
         $editForm->handleRequest($request);
 
+        /**
+         * This will remove the password from the edit.html.twig form
+         */
+        $editForm->remove('password');
+
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
