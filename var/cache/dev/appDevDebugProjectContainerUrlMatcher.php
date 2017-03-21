@@ -174,6 +174,22 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_admin_delete:
 
+            // admin_password
+            if (preg_match('#^/admin(?P<id>[^/]++)/password$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_admin_password;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_password')), array (  '_controller' => 'AppBundle\\Controller\\UserController::passwordAction',));
+            }
+            not_admin_password:
+
+            // admin_password_update
+            if (preg_match('#^/admin/(?P<id>[^/]++)/password_update$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_password_update')), array (  '_controller' => 'AppBundle\\Controller\\UserController::updatePasswordAction',));
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

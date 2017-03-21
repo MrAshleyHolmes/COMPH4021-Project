@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\User;
+use AppBundle\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -146,5 +147,63 @@ class UserController extends Controller
             ->setMethod('DELETE')
             ->getForm()
         ;
+    }
+
+    /**
+     * Displays a form to edit the password for existing user entity.
+     *
+     * @param $id
+     * @Route("{id}/password", name="admin_password")
+     * @Method("GET")
+     * @return array
+     */
+    public function passwordAction($id)
+    {
+        // Get the userManager
+        // Use the userManager to get our entity for the id given
+        $um = $this->getDoctrine()->getManager();
+        $user = $um->getRepository('AppBundle:User')->find($id);
+
+        if (!$user) {
+            throw $this->createNotFoundException('Unable to find User!');
+        }
+
+        // Tell Symfony to create a form using the UserFormType
+        // and the user we pulled from the um a few lines back
+        // must pass in the route where the form will post to
+        // must also pass the id
+        $passwordForm = $this->createForm(new UserType(), $user, array(
+            'action' => $this->generateUrl('admin_password_update', array('id' => $user->getId())),
+            'method' => 'PUT',
+        ));
+
+        $passwordForm->remove('email');
+        $passwordForm->remove('username');
+        $passwordForm->remove('firstName');
+        $passwordForm->remove('lastName');
+
+        $passwordForm->add('submit', 'submit', array(
+            'label' => 'Save New Password',
+            'attr' => array('class' => 'btn btn-md btn-primary'),
+        ));
+
+        // Pass our objects to the view
+        return array(
+            'user' => $user,
+            'password_form' => $passwordForm->createView(),
+        );
+    }
+
+    /**
+     * Handle the form. Then redirect
+     *
+     * @param Request $request
+     * @param $id
+     * @return array
+     * @Route("/{id}/password_update", name="admin_password_update")
+     */
+    public function updatePasswordAction(Request $request, $id)
+    {
+
     }
 }
