@@ -44,17 +44,18 @@ class User implements UserInterface
      *
      * @ORM\Column(name="firstname", type="string", length=80)
      * @Assert\NotBlank(message="Firstname is required");
-     * @Assert\Regex("/^[A-Za-z\-'']+$/", message = "
+     * @Assert\Regex("/^[A-Za-z_._ \-'']+$/", message = "
      * Name must be only letters and optional dashes, and apostrophes")
      */
     private $firstname;
+
 
     /**
      * @var string
      *
      * @ORM\Column(name="lastname", type="string", length=80)
      * @Assert\NotBlank(message="Lastname is required");
-     * @Assert\Regex("/^[A-Za-z\-'']+$/", message = "
+     * @Assert\Regex("/^[A-Za-z_._ \-'']+$/", message = "
      * Name must be only letters and optional dashes, and apostrophe")
      */
     private $lastname;

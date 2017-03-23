@@ -21,32 +21,32 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cc55b3d94d705ecbdd7721c70167aa380d4594f7a633b598afe096f9c387f188 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_cc55b3d94d705ecbdd7721c70167aa380d4594f7a633b598afe096f9c387f188->enter($__internal_cc55b3d94d705ecbdd7721c70167aa380d4594f7a633b598afe096f9c387f188_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
+        $__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480->enter($__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
 
-        $__internal_dfd17fa155a1676620a905ec64d55fff57208c5e8af996a8d4cc43b30f49cede = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dfd17fa155a1676620a905ec64d55fff57208c5e8af996a8d4cc43b30f49cede->enter($__internal_dfd17fa155a1676620a905ec64d55fff57208c5e8af996a8d4cc43b30f49cede_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
+        $__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74->enter($__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
 
         // line 2
         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->setTheme(($context["edit_form"] ?? $this->getContext($context, "edit_form")), array(0 => "form/formthemeoverwrite.html.twig"));
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_cc55b3d94d705ecbdd7721c70167aa380d4594f7a633b598afe096f9c387f188->leave($__internal_cc55b3d94d705ecbdd7721c70167aa380d4594f7a633b598afe096f9c387f188_prof);
+        $__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480->leave($__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480_prof);
 
         
-        $__internal_dfd17fa155a1676620a905ec64d55fff57208c5e8af996a8d4cc43b30f49cede->leave($__internal_dfd17fa155a1676620a905ec64d55fff57208c5e8af996a8d4cc43b30f49cede_prof);
+        $__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74->leave($__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_3730e7a82c3f2e1b29c3a47e7bb7a244bfc5f48e60f615a4d686a8f34c18fd8b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_3730e7a82c3f2e1b29c3a47e7bb7a244bfc5f48e60f615a4d686a8f34c18fd8b->enter($__internal_3730e7a82c3f2e1b29c3a47e7bb7a244bfc5f48e60f615a4d686a8f34c18fd8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10->enter($__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_a6a3c8ae7ac5346c0d9147f2d8e5758a22f66a2db92b98006e7f58edb574c3d1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_a6a3c8ae7ac5346c0d9147f2d8e5758a22f66a2db92b98006e7f58edb574c3d1->enter($__internal_a6a3c8ae7ac5346c0d9147f2d8e5758a22f66a2db92b98006e7f58edb574c3d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e->enter($__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"jumbotron\">
@@ -139,23 +139,29 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
         echo "\">Back to the list</a>
         </li>
         <li>
-            ";
+            <a href=\"";
         // line 45
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_password", array("id" => $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "id", array()))), "html", null, true);
+        echo "\" class=\"btn btn-secondary\">Change Password</a>
+        </li>
+        <li>
+            ";
+        // line 48
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 47
+        // line 50
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
         echo "
         </li>
     </ul>
 ";
         
-        $__internal_a6a3c8ae7ac5346c0d9147f2d8e5758a22f66a2db92b98006e7f58edb574c3d1->leave($__internal_a6a3c8ae7ac5346c0d9147f2d8e5758a22f66a2db92b98006e7f58edb574c3d1_prof);
+        $__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e->leave($__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e_prof);
 
         
-        $__internal_3730e7a82c3f2e1b29c3a47e7bb7a244bfc5f48e60f615a4d686a8f34c18fd8b->leave($__internal_3730e7a82c3f2e1b29c3a47e7bb7a244bfc5f48e60f615a4d686a8f34c18fd8b_prof);
+        $__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10->leave($__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10_prof);
 
     }
 
@@ -171,7 +177,7 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
 
     public function getDebugInfo()
     {
-        return array (  149 => 47,  144 => 45,  138 => 42,  131 => 38,  128 => 37,  126 => 36,  124 => 35,  122 => 34,  120 => 33,  115 => 30,  111 => 29,  107 => 28,  101 => 25,  97 => 24,  93 => 23,  87 => 20,  83 => 19,  79 => 18,  73 => 15,  69 => 14,  65 => 13,  62 => 12,  58 => 10,  52 => 6,  43 => 5,  33 => 1,  31 => 2,  11 => 1,);
+        return array (  155 => 50,  150 => 48,  144 => 45,  138 => 42,  131 => 38,  128 => 37,  126 => 36,  124 => 35,  122 => 34,  120 => 33,  115 => 30,  111 => 29,  107 => 28,  101 => 25,  97 => 24,  93 => 23,  87 => 20,  83 => 19,  79 => 18,  73 => 15,  69 => 14,  65 => 13,  62 => 12,  58 => 10,  52 => 6,  43 => 5,  33 => 1,  31 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -226,6 +232,9 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
     <ul>
         <li>
             <a href=\"{{ path('admin_index') }}\">Back to the list</a>
+        </li>
+        <li>
+            <a href=\"{{ path('admin_password', { 'id': user.id }) }}\" class=\"btn btn-secondary\">Change Password</a>
         </li>
         <li>
             {{ form_start(delete_form) }}

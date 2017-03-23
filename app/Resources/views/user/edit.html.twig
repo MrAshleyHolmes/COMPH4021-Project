@@ -42,7 +42,7 @@
             <a href="{{ path('admin_index') }}">Back to the list</a>
         </li>
         <li>
-            <a href="{{ path('admin_password') }}">Change Password</a>
+            <a href="{{ path('admin_password', { 'id': user.id }) }}">Change Password</a>
         </li>
         <li>
             {{ form_start(delete_form) }}

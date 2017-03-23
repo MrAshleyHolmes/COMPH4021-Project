@@ -2,8 +2,10 @@
 
 namespace AppBundle\Controller;
 
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use AppBundle\Entity\User;
 use AppBundle\Form\UserType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -150,48 +152,59 @@ class UserController extends Controller
     }
 
     /**
-     * Displays a form to edit the password for existing user entity.
+     * Displays a form to edit the password for existing user entity
      *
-     * @param $id
-     * @Route("{id}/password", name="admin_password")
+     * @Route("/{id}/password", name="admin_password")
      * @Method("GET")
-     * @return array
+     * @param $id
+     * @Template()
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function passwordAction($id)
     {
-        // Get the userManager
-        // Use the userManager to get our entity for the id given
-        $um = $this->getDoctrine()->getManager();
-        $user = $um->getRepository('AppBundle:User')->find($id);
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository('AppBundle:User')->find($id);
 
         if (!$user) {
-            throw $this->createNotFoundException('Unable to find User!');
+            throw $this->createNotFoundException(
+                'No product found for id ' . $user
+            );
         }
 
-        // Tell Symfony to create a form using the UserFormType
-        // and the user we pulled from the um a few lines back
-        // must pass in the route where the form will post to
-        // must also pass the id
-        $passwordForm = $this->createForm(new UserType(), $user, array(
+        $passwordForm = $this->createPasswordForm($user);
+
+        // Pass our objects to the view
+        return $this->render('user/password.html.twig', array(
+            'user' => $user,
+            'password_form' => $passwordForm->createView(),
+        ));
+    }
+
+    /**
+     * Creates a change password form
+     *
+     * @param User $user
+     * @return \Symfony\Component\Form\Form
+     */
+    public function createPasswordForm(User $user)
+    {
+        $passwordForm = $this->createForm(UserType::class, $user, array(
             'action' => $this->generateUrl('admin_password_update', array('id' => $user->getId())),
             'method' => 'PUT',
         ));
 
+        // Remove the fields we don't want from the FormType
         $passwordForm->remove('email');
         $passwordForm->remove('username');
         $passwordForm->remove('firstName');
         $passwordForm->remove('lastName');
 
-        $passwordForm->add('submit', 'submit', array(
+        // Add submit button
+        $passwordForm->add('submit', SubmitType::class, array(
             'label' => 'Save New Password',
-            'attr' => array('class' => 'btn btn-md btn-primary'),
+            'attr' => array('class' => ''),
         ));
-
-        // Pass our objects to the view
-        return array(
-            'user' => $user,
-            'password_form' => $passwordForm->createView(),
-        );
+        return $passwordForm;
     }
 
     /**
@@ -199,11 +212,49 @@ class UserController extends Controller
      *
      * @param Request $request
      * @param $id
-     * @return array
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      * @Route("/{id}/password_update", name="admin_password_update")
+     * @Method("PUT")
      */
     public function updatePasswordAction(Request $request, $id)
     {
+        // Get the entity manager
+        // Use the entity manager to get our entity for the id given
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository('AppBundle:User')->find($id);
 
+        if (!$user) {
+            throw $this->createNotFoundException(
+                'No product found for id ' . $user
+            );
+        }
+
+        // Tell Symfony to create a form using the UserFormType
+        // and the user we pulled from the um a few lines back
+        // must pass in the route where the form will post to
+        // must also pass the id
+        $passwordForm = $this->createPasswordForm($user);
+
+        // Symfony will handle the request
+        $passwordForm->handleRequest($request);
+
+        // Check to see if the object is valid
+        if ($passwordForm->isValid()) {
+
+            // Use our service to encode the password
+            $this->get('app_bundle.user_manager')->setUserPassword($user, $user->getPassword());
+
+            // The object is already persisted, so we need to flush it to the database
+            $em->flush();
+
+            // Redirect to the show page
+            return $this->redirect($this->generateUrl('admin_show', array('id' => $id)));
+        }
+
+        // Pass our objects to the view
+        return $this->render('user/password.html.twig', array(
+            'user' => $user,
+            'password_form' => $passwordForm->createView(),
+        ));
     }
 }
