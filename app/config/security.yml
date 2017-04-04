@@ -3,18 +3,16 @@
 security:
     encoders:
         AppBundle\Entity\User: bcrypt
-#    Symfony Password Encoder Utility which we will not use
-#    encoders:
-#        Symfony\Component\Security\Core\User\User:
-#            algorithm: bcrypt
-#            cost: 12
-#            php bin/console security:encode-password
 
+    role_hierarchy:
+        ROLE_USER: [ROLE_PROFILE_PAGE, ROLE_PROFILE_IMAGES]
+        ROLE_ADMIN: [ROLE_USER, ROLE_APPROVE_PURCHASE]
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_MAKE_ADMINS]
 
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory: ~
+        database_users:
+            entity: { class: AppBundle:User, property: username }
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -22,12 +20,14 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        main:
+        secured_area:
+            pattern: ^/
+            form_login:
+                login_path: /login
+                check_path: /login_check
+            logout:
+                path: /logout
+                target: /login
             anonymous: ~
-            # activate different ways to authenticate
 
-            # http_basic: ~
-            # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-
-            # form_login: ~
-            # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+    access_control:
