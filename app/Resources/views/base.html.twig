@@ -52,9 +52,13 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="nav navbar-right navbar-nav">
-                <li class=""><a href="{{ path('admin_index') }}">Admin</a></li>
-                <li class=""><a href="#">Register</a></li>
-                <li class=""><a href="#">Login</a></li>
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <li><a href="{{ path('logout') }}">Logout</a></li>
+                {% else %}
+                <li><a href="{{ path('admin_index') }}">Admin</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="{{ path('login_route') }}">Login</a></li>
+                {% endif %}
             </ul>
         </div><!--/.nav-collapse -->
     </div>

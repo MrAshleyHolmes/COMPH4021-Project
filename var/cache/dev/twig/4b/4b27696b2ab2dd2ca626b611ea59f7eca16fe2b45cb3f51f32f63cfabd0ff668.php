@@ -21,32 +21,32 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480->enter($__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
+        $__internal_2a37966dd809b4a701da05789f5343665c3b51ccff4dd32640c3ea595d2c4fa9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2a37966dd809b4a701da05789f5343665c3b51ccff4dd32640c3ea595d2c4fa9->enter($__internal_2a37966dd809b4a701da05789f5343665c3b51ccff4dd32640c3ea595d2c4fa9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
 
-        $__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74->enter($__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
+        $__internal_23a6130b16c523988b47638954ede0f2c63e9dc613a5bab478512a91fb5fed18 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_23a6130b16c523988b47638954ede0f2c63e9dc613a5bab478512a91fb5fed18->enter($__internal_23a6130b16c523988b47638954ede0f2c63e9dc613a5bab478512a91fb5fed18_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/edit.html.twig"));
 
         // line 2
         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->setTheme(($context["edit_form"] ?? $this->getContext($context, "edit_form")), array(0 => "form/formthemeoverwrite.html.twig"));
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480->leave($__internal_46bbb3facb88ac2edbcf08b093d36ffabf8d1cee2374c5ca327602d9e8531480_prof);
+        $__internal_2a37966dd809b4a701da05789f5343665c3b51ccff4dd32640c3ea595d2c4fa9->leave($__internal_2a37966dd809b4a701da05789f5343665c3b51ccff4dd32640c3ea595d2c4fa9_prof);
 
         
-        $__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74->leave($__internal_46f60d651afb548e282ab7542294c51589a57f275972974f19724f14d490ce74_prof);
+        $__internal_23a6130b16c523988b47638954ede0f2c63e9dc613a5bab478512a91fb5fed18->leave($__internal_23a6130b16c523988b47638954ede0f2c63e9dc613a5bab478512a91fb5fed18_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10->enter($__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_51c959ed4437d8563003a7a84b77191c4d5510fc4552f8f77059e746453533b2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_51c959ed4437d8563003a7a84b77191c4d5510fc4552f8f77059e746453533b2->enter($__internal_51c959ed4437d8563003a7a84b77191c4d5510fc4552f8f77059e746453533b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e->enter($__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e71d1a971b137bf8fd5cf7f3ea879fbf735cdb9c0ab3aeb1761da2f0645a5b63 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e71d1a971b137bf8fd5cf7f3ea879fbf735cdb9c0ab3aeb1761da2f0645a5b63->enter($__internal_e71d1a971b137bf8fd5cf7f3ea879fbf735cdb9c0ab3aeb1761da2f0645a5b63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    <div class=\"jumbotron\">
@@ -142,7 +142,7 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
             <a href=\"";
         // line 45
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("admin_password", array("id" => $this->getAttribute(($context["user"] ?? $this->getContext($context, "user")), "id", array()))), "html", null, true);
-        echo "\" class=\"btn btn-secondary\">Change Password</a>
+        echo "\">Change Password</a>
         </li>
         <li>
             ";
@@ -158,10 +158,10 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
     </ul>
 ";
         
-        $__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e->leave($__internal_dd8d5c5c88809b07f7aa89c2f74ac4b1aed637ea0662dd311854b7de0ba5592e_prof);
+        $__internal_e71d1a971b137bf8fd5cf7f3ea879fbf735cdb9c0ab3aeb1761da2f0645a5b63->leave($__internal_e71d1a971b137bf8fd5cf7f3ea879fbf735cdb9c0ab3aeb1761da2f0645a5b63_prof);
 
         
-        $__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10->leave($__internal_12f3146576a2e7e8480f94a70a0bc7b06895f88eaee967ab57315c89fcee8f10_prof);
+        $__internal_51c959ed4437d8563003a7a84b77191c4d5510fc4552f8f77059e746453533b2->leave($__internal_51c959ed4437d8563003a7a84b77191c4d5510fc4552f8f77059e746453533b2_prof);
 
     }
 
@@ -234,7 +234,7 @@ class __TwigTemplate_6551cbcea8e4ce7e8be00210bf07adec8304f2d5182833473a09739d0dc
             <a href=\"{{ path('admin_index') }}\">Back to the list</a>
         </li>
         <li>
-            <a href=\"{{ path('admin_password', { 'id': user.id }) }}\" class=\"btn btn-secondary\">Change Password</a>
+            <a href=\"{{ path('admin_password', { 'id': user.id }) }}\">Change Password</a>
         </li>
         <li>
             {{ form_start(delete_form) }}
