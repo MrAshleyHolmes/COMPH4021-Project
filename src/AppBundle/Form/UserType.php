@@ -2,6 +2,7 @@
 
 namespace AppBundle\Form;
 
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -55,6 +56,10 @@ class UserType extends AbstractType
                     'placeholder' => "Enter Password",
                     'class' => "form-control"
                 )
+            ))
+            ->add('isAdmin', CheckboxType::class, array(
+                'label' => "Make Admin",
+                'required' => false,
             ));
         /*$builder->add('username')->add('firstname')->add('lastname')->add('email')->add('password');*/
     }

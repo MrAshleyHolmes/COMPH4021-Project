@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="398b92a5-2cee-4ad0-bf2d-91d52b3df484" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_k53mlqdmvb28amrqb5p698ma6q" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/0/T/tVqVOsp59E30-1jFHG-k" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/0/T/tVqVOsp59E30-1jFHG-k" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/5/8/fN7oMht+y9PQpV-6-MZD" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/5/8/fN7oMht+y9PQpV-6-MZD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/6/4/0NNN2Z4whulrUp-bb7fH" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/6/4/0NNN2Z4whulrUp-bb7fH" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/7/Y/OCKOSCqWmrriEk8+w9qP" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/7/Y/OCKOSCqWmrriEk8+w9qP" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/L/4FQ+5G+3pijDVAQPbBUo" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/L/4FQ+5G+3pijDVAQPbBUo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/N/-WiA+nS1AOtESNq+diuk" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/N/-WiA+nS1AOtESNq+diuk" />
@@ -35,6 +32,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/O/O/W30GvR9nQSHqCEFWqkC7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/O/O/W30GvR9nQSHqCEFWqkC7" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/P/R/WM30ih+sGxu2tM7NlwhH" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/P/R/WM30ih+sGxu2tM7NlwhH" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/S/Z/7-lZhFkhENkEorQGT4ZZ" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/S/Z/7-lZhFkhENkEorQGT4ZZ" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/T/B/1M0rtseUqK8V8qfFn3a0" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/T/B/1M0rtseUqK8V8qfFn3a0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/T/M/epjWfTrGaY9fAIMmx5ww" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/T/M/epjWfTrGaY9fAIMmx5ww" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/U/S/PLSVB4FGN5ZID8xV7jzy" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/U/S/PLSVB4FGN5ZID8xV7jzy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/V/8/vvQ1z0xTAfQEGPgXHnOR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/V/8/vvQ1z0xTAfQEGPgXHnOR" />
@@ -43,8 +41,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/X/P/h-psDjkwStgICYMwmNbn" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/X/P/h-psDjkwStgICYMwmNbn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Z/G/UdYM2ijbl-eui7XHz9Il" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Z/G/UdYM2ijbl-eui7XHz9Il" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f55ae0027086149782a2b8a6229da6cebe69b6877ca77df353d34a70c300fe3.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f55ae0027086149782a2b8a6229da6cebe69b6877ca77df353d34a70c300fe3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_5l4q8aka3mvk1nkpggtltkkg64" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_5l4q8aka3mvk1nkpggtltkkg64" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -137,12 +135,24 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+            <state relative-caret-position="405">
+              <caret line="64" column="42" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="42" />
               <folding>
                 <element signature="e#779#795#1#PHP" expanded="true" />
-                <element signature="e#4675#4691#1#PHP" expanded="true" />
-                <element signature="e#6558#6574#1#PHP" expanded="true" />
+                <element signature="e#5107#5123#1#PHP" expanded="true" />
+                <element signature="e#6990#7006#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="59" column="48" lean-forward="false" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+              <folding>
+                <element signature="e#34#94#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,8 +161,8 @@
       <file leaf-file-name="PopulateUserTable.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+            <state relative-caret-position="495">
+              <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -161,8 +171,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="258" column="28" lean-forward="false" selection-start-line="258" selection-start-column="20" selection-end-line="258" selection-end-column="28" />
+            <state relative-caret-position="467">
+              <caret line="286" column="35" lean-forward="false" selection-start-line="286" selection-start-column="35" selection-end-line="286" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -187,6 +197,7 @@
       <find>admin_index</find>
       <find>admin_show</find>
       <find>handleReq</find>
+      <find>getRoles</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Services/UserManager.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
@@ -215,6 +225,7 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" />
@@ -653,12 +664,12 @@
       <workItem from="1490142151565" duration="9086000" />
       <workItem from="1490225624345" duration="212000" />
       <workItem from="1490283901998" duration="14559000" />
-      <workItem from="1491302712066" duration="30461000" />
+      <workItem from="1491302712066" duration="34262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104645000" />
+    <option name="totallyTimeSpent" value="108446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,9 +682,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32148626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32148626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -682,7 +693,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6696035" sideWeight="0.49676898" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -764,14 +775,14 @@
             <element signature="e#40#98#0#PHP" expanded="false" />
             <element signature="e#779#795#1#PHP" expanded="true" />
             <element signature="e#839#861#0#PHP" expanded="false" />
-            <element signature="e#3134#3155#0#PHP" expanded="false" />
-            <element signature="e#3822#3835#1#PHP" expanded="false" />
-            <element signature="e#4675#4691#1#PHP" expanded="true" />
-            <element signature="e#4983#5008#0#PHP" expanded="false" />
-            <element signature="e#5428#5451#0#PHP" expanded="false" />
-            <element signature="e#6558#6574#1#PHP" expanded="true" />
-            <element signature="e#7560#7572#0#PHP" expanded="false" />
-            <element signature="e#7676#7701#0#PHP" expanded="false" />
+            <element signature="e#3566#3587#0#PHP" expanded="false" />
+            <element signature="e#4254#4267#1#PHP" expanded="false" />
+            <element signature="e#5107#5123#1#PHP" expanded="true" />
+            <element signature="e#5415#5440#0#PHP" expanded="false" />
+            <element signature="e#5860#5883#0#PHP" expanded="false" />
+            <element signature="e#6990#7006#1#PHP" expanded="true" />
+            <element signature="e#7992#8004#0#PHP" expanded="false" />
+            <element signature="e#8108#8133#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -841,14 +852,14 @@
             <element signature="e#40#98#0#PHP" expanded="false" />
             <element signature="e#779#795#1#PHP" expanded="true" />
             <element signature="e#839#861#0#PHP" expanded="false" />
-            <element signature="e#3134#3155#0#PHP" expanded="false" />
-            <element signature="e#3822#3835#1#PHP" expanded="false" />
-            <element signature="e#4675#4691#1#PHP" expanded="true" />
-            <element signature="e#4983#5008#0#PHP" expanded="false" />
-            <element signature="e#5428#5451#0#PHP" expanded="false" />
-            <element signature="e#6558#6574#1#PHP" expanded="true" />
-            <element signature="e#7560#7572#0#PHP" expanded="false" />
-            <element signature="e#7676#7701#0#PHP" expanded="false" />
+            <element signature="e#3566#3587#0#PHP" expanded="false" />
+            <element signature="e#4254#4267#1#PHP" expanded="false" />
+            <element signature="e#5107#5123#1#PHP" expanded="true" />
+            <element signature="e#5415#5440#0#PHP" expanded="false" />
+            <element signature="e#5860#5883#0#PHP" expanded="false" />
+            <element signature="e#6990#7006#1#PHP" expanded="true" />
+            <element signature="e#7992#8004#0#PHP" expanded="false" />
+            <element signature="e#8108#8133#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1115,14 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/security/mylogin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1138,17 +1141,6 @@
           <folding>
             <element signature="e#2599#2605#0#Twig" expanded="true" />
             <element signature="e#2814#2825#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
-            <element signature="e#705#731#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1173,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="258" column="28" lean-forward="false" selection-start-line="258" selection-start-column="20" selection-end-line="258" selection-end-column="28" />
+        <state relative-caret-position="467">
+          <caret line="286" column="35" lean-forward="false" selection-start-line="286" selection-start-column="35" selection-end-line="286" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1189,22 +1181,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#40#85#0#PHP" expanded="true" />
+            <element signature="e#705#731#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+        <state relative-caret-position="405">
+          <caret line="64" column="42" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="42" />
           <folding>
             <element signature="e#779#795#1#PHP" expanded="true" />
-            <element signature="e#4675#4691#1#PHP" expanded="true" />
-            <element signature="e#6558#6574#1#PHP" expanded="true" />
+            <element signature="e#5107#5123#1#PHP" expanded="true" />
+            <element signature="e#6990#7006#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="59" column="48" lean-forward="false" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+          <folding>
+            <element signature="e#34#94#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+        <state relative-caret-position="495">
+          <caret line="47" column="48" lean-forward="false" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
           <folding />
         </state>
       </provider>

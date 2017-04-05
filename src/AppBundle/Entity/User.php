@@ -84,6 +84,31 @@ class User implements UserInterface
     private $password;
 
     /**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_admin", type="boolean")
+     */
+    private $isAdmin;
+
+    /**
+     * @return bool
+     */
+    public function getIsAdmin()
+    {
+        return $this->isAdmin;
+    }
+
+    /**
+     * @param $isAdmin
+     * @return $this
+     */
+    public function setIsAdmin($isAdmin)
+    {
+        $this->isAdmin = $isAdmin;
+        return $this;
+    }
+
+    /**
      * @return null
      */
     public function getSalt()
@@ -250,15 +275,18 @@ class User implements UserInterface
      */
     public function getRoles()
     {
-        return array('ROLE_USER');
+        $roles = $this->roles;
+        $roles[] = 'ROLE_USER';
+        return array_unique($roles);
     }
 
     /**
-     * @param mixed $roles
+     * @param $roles
+     * @return $this
      */
-    public function setRoles($roles)
+    public function setRoles(array $roles)
     {
         $this->roles = $roles;
+        return $this;
     }
 }
-

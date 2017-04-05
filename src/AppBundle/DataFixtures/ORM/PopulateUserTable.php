@@ -27,7 +27,7 @@ class PopulateUserTable implements FixtureInterface, ContainerAwareInterface
         // TODO: Implement load() method.
         $faker = Faker\Factory::create();
 
-        for ($x = 0; $x <= 6; $x++) {
+        for ($x = 0; $x <= 9; $x++) {
 
             $userAdmin = new User();
             $userAdmin->setUsername($faker->userName);
@@ -36,7 +36,8 @@ class PopulateUserTable implements FixtureInterface, ContainerAwareInterface
             $userAdmin->setEmail($faker->email);
             $userAdmin->setPassword($faker->password);
             $userAdmin->setPassword($this->hashPassword($userAdmin, $faker->password));
-            $userAdmin->setRoles(array('ROLE_SUPER_ADMIN'));
+            $userAdmin->setRoles(array('ROLE_USER'));
+            $userAdmin->setIsAdmin(false);
 
             $manager->persist($userAdmin);
         }

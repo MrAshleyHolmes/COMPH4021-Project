@@ -56,6 +56,13 @@ class UserController extends Controller
             $this->get('app_bundle.user_manager')
                 ->setUserPassword($user, $user->getPassword());
 
+            $role = ($form->get('isAdmin')->getData()) ? 'ROLE_ADMIN' : 'ROLE_USER';
+
+            /**
+             * Add role based on value of checkbox
+             */
+
+            $user->setRoles(array($role));
             $user->setRoles(array('ROLE_USER'));
 
             $em->persist($user);
@@ -105,6 +112,15 @@ class UserController extends Controller
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
+
+            $role = ($editForm->get('isAdmin')->getData()) ? 'ROLE_ADMIN' : 'ROLE_USER';
+
+            /**
+             * Add role based on value of checkbox
+             */
+
+            $user->setRoles(array($role));
+
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('admin_edit', array('id' => $user->getId()));
