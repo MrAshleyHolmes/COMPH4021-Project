@@ -2,18 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="398b92a5-2cee-4ad0-bf2d-91d52b3df484" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_cd839lgpe7ndkdsmnk0ioq85mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_k53mlqdmvb28amrqb5p698ma6q" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/C/B/T7aMsrwedl0devbNRwoZ" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/C/B/T7aMsrwedl0devbNRwoZ" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/R/I/NSle310baBao1jebdraU" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/R/I/NSle310baBao1jebdraU" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/S/K/XjJct++BGv0GT4Sq5wIx" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/S/K/XjJct++BGv0GT4Sq5wIx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Z/E/wJNAIa9LhPDq+Dr8teGY" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Z/E/wJNAIa9LhPDq+Dr8teGY" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/0/T/tVqVOsp59E30-1jFHG-k" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/0/T/tVqVOsp59E30-1jFHG-k" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/5/8/fN7oMht+y9PQpV-6-MZD" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/5/8/fN7oMht+y9PQpV-6-MZD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/7/Y/OCKOSCqWmrriEk8+w9qP" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/7/Y/OCKOSCqWmrriEk8+w9qP" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/L/4FQ+5G+3pijDVAQPbBUo" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/L/4FQ+5G+3pijDVAQPbBUo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/N/-WiA+nS1AOtESNq+diuk" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/N/-WiA+nS1AOtESNq+diuk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/U/tVgzEYKavWOQ0-gxon4j" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/8/U/tVgzEYKavWOQ0-gxon4j" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/A/P/aEjfxmZfVyZF2jZF1Kan" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/A/P/aEjfxmZfVyZF2jZF1Kan" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/A/T/k1iS-qMycl17tNy8d5Li" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/A/T/k1iS-qMycl17tNy8d5Li" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/C/H/J5cWxrYaOTUfw806Kk0K" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/C/H/J5cWxrYaOTUfw806Kk0K" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/D/T/9vEtnSIwEGbMYg1PUTbn" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/D/T/9vEtnSIwEGbMYg1PUTbn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/D/Z/BKSmu26j5qocrX2rBuLO" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/D/Z/BKSmu26j5qocrX2rBuLO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/E/Q/IOUNfwNJ5jOtkkxbw1mf" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/E/Q/IOUNfwNJ5jOtkkxbw1mf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/F/B/-RnSO1kTxLGWJp2v1Dn9" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/F/B/-RnSO1kTxLGWJp2v1Dn9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/H/6/kKbYh9n-NC1S81qDYJM+" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/H/6/kKbYh9n-NC1S81qDYJM+" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/H/K/2ver4tp5Nu3qd59auhVw" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/H/K/2ver4tp5Nu3qd59auhVw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/I/U/wzlM0g1UaeVNbw37pgeM" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/I/U/wzlM0g1UaeVNbw37pgeM" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/I/X/hV0W34-rPuFxi7OSCgMX" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/I/X/hV0W34-rPuFxi7OSCgMX" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/J/-/4CCOatvF3UPKfuZD4vUt" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/J/-/4CCOatvF3UPKfuZD4vUt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/L/6/Rdf0tZjcKYKzd4u19GsI" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/L/6/Rdf0tZjcKYKzd4u19GsI" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/L/E/Hb8RneCeSnDjeqoVfDhX" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/L/E/Hb8RneCeSnDjeqoVfDhX" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/L/M/dKSDBdPlMOo-5bEkYo84" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/L/M/dKSDBdPlMOo-5bEkYo84" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/O/O/W30GvR9nQSHqCEFWqkC7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/O/O/W30GvR9nQSHqCEFWqkC7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/P/R/WM30ih+sGxu2tM7NlwhH" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/P/R/WM30ih+sGxu2tM7NlwhH" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/S/Z/7-lZhFkhENkEorQGT4ZZ" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/S/Z/7-lZhFkhENkEorQGT4ZZ" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/T/M/epjWfTrGaY9fAIMmx5ww" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/T/M/epjWfTrGaY9fAIMmx5ww" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/U/S/PLSVB4FGN5ZID8xV7jzy" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/U/S/PLSVB4FGN5ZID8xV7jzy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/V/8/vvQ1z0xTAfQEGPgXHnOR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/V/8/vvQ1z0xTAfQEGPgXHnOR" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/V/G/Wd2LB3gG7zYj4gzU3ztG" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/V/G/Wd2LB3gG7zYj4gzU3ztG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/X/A/kD1uNkah8SdwSJm-IOGR" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/X/A/kD1uNkah8SdwSJm-IOGR" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/X/P/h-psDjkwStgICYMwmNbn" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/X/P/h-psDjkwStgICYMwmNbn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Z/G/UdYM2ijbl-eui7XHz9Il" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Z/G/UdYM2ijbl-eui7XHz9Il" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f55ae0027086149782a2b8a6229da6cebe69b6877ca77df353d34a70c300fe3.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/0f/0f55ae0027086149782a2b8a6229da6cebe69b6877ca77df353d34a70c300fe3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
@@ -49,18 +77,18 @@
       <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/security/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="31" column="97" lean-forward="false" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="97" />
+            <state relative-caret-position="465">
+              <caret line="31" column="65" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="65" />
               <folding>
                 <element signature="e#395#406#0#Twig" expanded="true" />
               </folding>
@@ -97,11 +125,45 @@
       <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="76" />
+            <state relative-caret-position="180">
+              <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="76" />
               <folding>
                 <element signature="e#40#102#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+              <folding>
+                <element signature="e#779#795#1#PHP" expanded="true" />
+                <element signature="e#4675#4691#1#PHP" expanded="true" />
+                <element signature="e#6558#6574#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PopulateUserTable.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="258" column="28" lean-forward="false" selection-start-line="258" selection-start-column="20" selection-end-line="258" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,19 +205,19 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Services/UserManager.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/password.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/security/mylogin.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php" />
       </list>
     </option>
   </component>
@@ -207,9 +269,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="578" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="218" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -591,12 +653,12 @@
       <workItem from="1490142151565" duration="9086000" />
       <workItem from="1490225624345" duration="212000" />
       <workItem from="1490283901998" duration="14559000" />
-      <workItem from="1491302712066" duration="27948000" />
+      <workItem from="1491302712066" duration="30461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102132000" />
+    <option name="totallyTimeSpent" value="104645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,10 +670,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="578" width="1280" height="218" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32148626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32148626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -700,16 +762,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#98#0#PHP" expanded="false" />
-            <element signature="e#779#795#1#PHP" expanded="false" />
+            <element signature="e#779#795#1#PHP" expanded="true" />
             <element signature="e#839#861#0#PHP" expanded="false" />
-            <element signature="e#3084#3105#0#PHP" expanded="false" />
-            <element signature="e#3772#3785#1#PHP" expanded="false" />
-            <element signature="e#4625#4641#1#PHP" expanded="false" />
-            <element signature="e#4933#4958#0#PHP" expanded="false" />
-            <element signature="e#5378#5401#0#PHP" expanded="false" />
-            <element signature="e#6508#6524#1#PHP" expanded="false" />
-            <element signature="e#7510#7522#0#PHP" expanded="false" />
-            <element signature="e#7626#7651#0#PHP" expanded="false" />
+            <element signature="e#3134#3155#0#PHP" expanded="false" />
+            <element signature="e#3822#3835#1#PHP" expanded="false" />
+            <element signature="e#4675#4691#1#PHP" expanded="true" />
+            <element signature="e#4983#5008#0#PHP" expanded="false" />
+            <element signature="e#5428#5451#0#PHP" expanded="false" />
+            <element signature="e#6558#6574#1#PHP" expanded="true" />
+            <element signature="e#7560#7572#0#PHP" expanded="false" />
+            <element signature="e#7676#7701#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,16 +839,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#98#0#PHP" expanded="false" />
-            <element signature="e#779#795#1#PHP" expanded="false" />
+            <element signature="e#779#795#1#PHP" expanded="true" />
             <element signature="e#839#861#0#PHP" expanded="false" />
-            <element signature="e#3084#3105#0#PHP" expanded="false" />
-            <element signature="e#3772#3785#1#PHP" expanded="false" />
-            <element signature="e#4625#4641#1#PHP" expanded="false" />
-            <element signature="e#4933#4958#0#PHP" expanded="false" />
-            <element signature="e#5378#5401#0#PHP" expanded="false" />
-            <element signature="e#6508#6524#1#PHP" expanded="false" />
-            <element signature="e#7510#7522#0#PHP" expanded="false" />
-            <element signature="e#7626#7651#0#PHP" expanded="false" />
+            <element signature="e#3134#3155#0#PHP" expanded="false" />
+            <element signature="e#3822#3835#1#PHP" expanded="false" />
+            <element signature="e#4675#4691#1#PHP" expanded="true" />
+            <element signature="e#4983#5008#0#PHP" expanded="false" />
+            <element signature="e#5428#5451#0#PHP" expanded="false" />
+            <element signature="e#6558#6574#1#PHP" expanded="true" />
+            <element signature="e#7560#7572#0#PHP" expanded="false" />
+            <element signature="e#7676#7701#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,26 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3255">
-          <caret line="217" column="7" lean-forward="false" selection-start-line="217" selection-start-column="7" selection-end-line="217" selection-end-column="7" />
-          <folding>
-            <element signature="e#40#98#0#PHP" expanded="false" />
-            <element signature="e#779#795#1#PHP" expanded="false" />
-            <element signature="e#839#861#0#PHP" expanded="false" />
-            <element signature="e#3084#3105#0#PHP" expanded="false" />
-            <element signature="e#3772#3785#1#PHP" expanded="false" />
-            <element signature="e#4625#4641#1#PHP" expanded="false" />
-            <element signature="e#4933#4958#0#PHP" expanded="false" />
-            <element signature="e#5378#5401#0#PHP" expanded="false" />
-            <element signature="e#6508#6524#1#PHP" expanded="false" />
-            <element signature="e#7510#7522#0#PHP" expanded="false" />
-            <element signature="e#7626#7651#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/user/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1057,16 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="e#135#145#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1099,16 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="70" lean-forward="false" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
-          <folding>
-            <element signature="e#36#99#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
@@ -1131,31 +1153,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="76" />
+        <state relative-caret-position="465">
+          <caret line="31" column="65" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="65" />
           <folding>
-            <element signature="e#40#102#0#PHP" expanded="true" />
+            <element signature="e#395#406#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/security/login.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="97" lean-forward="false" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="97" />
+        <state relative-caret-position="449">
+          <caret line="258" column="28" lean-forward="false" selection-start-line="258" selection-start-column="20" selection-end-line="258" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="76" />
           <folding>
-            <element signature="e#395#406#0#Twig" expanded="true" />
+            <element signature="e#40#102#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding>
+            <element signature="e#779#795#1#PHP" expanded="true" />
+            <element signature="e#4675#4691#1#PHP" expanded="true" />
+            <element signature="e#6558#6574#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/PopulateUserTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

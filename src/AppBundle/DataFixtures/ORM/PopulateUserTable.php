@@ -36,6 +36,7 @@ class PopulateUserTable implements FixtureInterface, ContainerAwareInterface
             $userAdmin->setEmail($faker->email);
             $userAdmin->setPassword($faker->password);
             $userAdmin->setPassword($this->hashPassword($userAdmin, $faker->password));
+            $userAdmin->setRoles(array('ROLE_SUPER_ADMIN'));
 
             $manager->persist($userAdmin);
         }

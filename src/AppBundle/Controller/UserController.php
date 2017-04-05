@@ -56,6 +56,8 @@ class UserController extends Controller
             $this->get('app_bundle.user_manager')
                 ->setUserPassword($user, $user->getPassword());
 
+            $user->setRoles(array('ROLE_USER'));
+
             $em->persist($user);
             $em->flush($user);
 

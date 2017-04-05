@@ -21,6 +21,13 @@ use Doctrine\ORM\Mapping as ORM;
 class User implements UserInterface
 {
     /**
+     * @var
+     *
+     * @ORM\Column(name="roles", type="json_array")
+     */
+    private $roles;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -244,6 +251,14 @@ class User implements UserInterface
     public function getRoles()
     {
         return array('ROLE_USER');
+    }
+
+    /**
+     * @param mixed $roles
+     */
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
     }
 }
 
