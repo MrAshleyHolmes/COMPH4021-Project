@@ -12,7 +12,8 @@ security:
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         database_users:
-            entity: { class: AppBundle:User, property: username }
+            entity: { class: AppBundle:User }
+            # entity: { class: AppBundle:User, property: email }
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -25,7 +26,7 @@ security:
             form_login:
                 login_path: /login
                 check_path: /login_check
-               # username_parameter: _email
+                username_parameter: _email
             logout:
                 path: /logout
                 target: /login

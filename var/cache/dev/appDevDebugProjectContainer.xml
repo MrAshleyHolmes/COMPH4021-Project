@@ -477,7 +477,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>MDnNZBf6XN</argument>
                 <argument>0</argument>
-                <argument>XFof2f45PhEfNaYNHwwTkf</argument>
+                <argument>y1zcyZsGldVNZq5ELki91U</argument>
                 <argument>/Users/ashleyholmes/Sites/COMPH4021-Project/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -645,7 +645,7 @@
           <tag name="monolog.logger" channel="cache"/>
           <argument>OFoLHcbwYj</argument>
           <argument>null</argument>
-          <argument>XFof2f45PhEfNaYNHwwTkf</argument>
+          <argument>y1zcyZsGldVNZq5ELki91U</argument>
           <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
           <factory class="Symfony\Component\PropertyAccess\PropertyAccessor" method="createCache"/>
         </service>
@@ -666,7 +666,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>6XnRDn8+l0</argument>
       <argument>0</argument>
-      <argument>XFof2f45PhEfNaYNHwwTkf</argument>
+      <argument>y1zcyZsGldVNZq5ELki91U</argument>
       <argument>/Users/ashleyholmes/Sites/COMPH4021-Project/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -676,7 +676,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>rGJdopL22i</argument>
       <argument>0</argument>
-      <argument>XFof2f45PhEfNaYNHwwTkf</argument>
+      <argument>y1zcyZsGldVNZq5ELki91U</argument>
       <argument>/Users/ashleyholmes/Sites/COMPH4021-Project/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1680,7 +1680,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>58e4f606837292.25279089</argument>
+            <argument>58e5108891f0d1.39165317</argument>
           </service>
         </argument>
       </argument>
@@ -1803,7 +1803,7 @@
     <service id="security.user.provider.concrete.database_users" class="Symfony\Bridge\Doctrine\Security\User\EntityUserProvider" public="false">
       <argument type="service" id="doctrine"/>
       <argument>AppBundle:User</argument>
-      <argument>username</argument>
+      <argument>null</argument>
       <argument>null</argument>
     </service>
     <service id="security.firewall.map.context.dev" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext">
@@ -1949,9 +1949,9 @@
             </argument>
             <argument type="collection">
               <argument key="check_path">/login_check</argument>
+              <argument key="username_parameter">_email</argument>
               <argument key="use_forward">false</argument>
               <argument key="require_previous_session">true</argument>
-              <argument key="username_parameter">_username</argument>
               <argument key="password_parameter">_password</argument>
               <argument key="csrf_parameter">_csrf_token</argument>
               <argument key="csrf_token_id">authenticate</argument>
@@ -1965,7 +1965,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>58e4f606837292.25279089</argument>
+            <argument>58e5108891f0d1.39165317</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
