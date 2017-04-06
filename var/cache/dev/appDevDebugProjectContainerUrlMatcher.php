@@ -114,6 +114,26 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
+        // app_pages_contact
+        if ($pathinfo === '/contact') {
+            return array (  '_controller' => 'AppBundle\\Controller\\PagesController::contactAction',  '_route' => 'app_pages_contact',);
+        }
+
+        // app_pages_profile
+        if ($pathinfo === '/profile') {
+            return array (  '_controller' => 'AppBundle\\Controller\\PagesController::profileAction',  '_route' => 'app_pages_profile',);
+        }
+
+        // app_pages_about
+        if ($pathinfo === '/about') {
+            return array (  '_controller' => 'AppBundle\\Controller\\PagesController::aboutAction',  '_route' => 'app_pages_about',);
+        }
+
+        // app_pages_orders
+        if ($pathinfo === '/orders') {
+            return array (  '_controller' => 'AppBundle\\Controller\\PagesController::ordersAction',  '_route' => 'app_pages_orders',);
+        }
+
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {
                 // login_route

@@ -21,33 +21,33 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a6000fde4ab76ef7fb6d1f30ee5f7f13b3cb44768967faec598212adbe91f559 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a6000fde4ab76ef7fb6d1f30ee5f7f13b3cb44768967faec598212adbe91f559->enter($__internal_a6000fde4ab76ef7fb6d1f30ee5f7f13b3cb44768967faec598212adbe91f559_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
+        $__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971->enter($__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
 
-        $__internal_5c8792eed61148b283826bb9bfec1511bbe70207144b734fe3265f9cb77c0d5f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5c8792eed61148b283826bb9bfec1511bbe70207144b734fe3265f9cb77c0d5f->enter($__internal_5c8792eed61148b283826bb9bfec1511bbe70207144b734fe3265f9cb77c0d5f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
+        $__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae->enter($__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a6000fde4ab76ef7fb6d1f30ee5f7f13b3cb44768967faec598212adbe91f559->leave($__internal_a6000fde4ab76ef7fb6d1f30ee5f7f13b3cb44768967faec598212adbe91f559_prof);
+        $__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971->leave($__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971_prof);
 
         
-        $__internal_5c8792eed61148b283826bb9bfec1511bbe70207144b734fe3265f9cb77c0d5f->leave($__internal_5c8792eed61148b283826bb9bfec1511bbe70207144b734fe3265f9cb77c0d5f_prof);
+        $__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae->leave($__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_bb4cac6a82fdca2ae0915d2244fe46fd36dc5e1d82058b41b8de73408017e38a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_bb4cac6a82fdca2ae0915d2244fe46fd36dc5e1d82058b41b8de73408017e38a->enter($__internal_bb4cac6a82fdca2ae0915d2244fe46fd36dc5e1d82058b41b8de73408017e38a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522->enter($__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_3418707471a012a9093115976b3cb6d4d50b4ae464d706f4924a05bea1cfc630 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3418707471a012a9093115976b3cb6d4d50b4ae464d706f4924a05bea1cfc630->enter($__internal_3418707471a012a9093115976b3cb6d4d50b4ae464d706f4924a05bea1cfc630_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348->enter($__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <div class=\"jumbotron\">
-        <h2>Please login!</h2>
+        <h2>Welcome to the Pages:login page</h2>
     </div>
 
     ";
@@ -82,15 +82,22 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
             ";
         // line 31
         echo "
+            <input type=\"hidden\" name=\"_csrf_token\"
+                   value=\"";
+        // line 33
+        echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderCsrfToken("authenticate"), "html", null, true);
+        echo "\"
+            >
+
             <button type=\"submit\" class=\"btn btn-secondary\">login<i class=\"fa fa-lock\" aria-hidden=\"true\"></i></button>
         </form>
     </div>
 ";
         
-        $__internal_3418707471a012a9093115976b3cb6d4d50b4ae464d706f4924a05bea1cfc630->leave($__internal_3418707471a012a9093115976b3cb6d4d50b4ae464d706f4924a05bea1cfc630_prof);
+        $__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348->leave($__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348_prof);
 
         
-        $__internal_bb4cac6a82fdca2ae0915d2244fe46fd36dc5e1d82058b41b8de73408017e38a->leave($__internal_bb4cac6a82fdca2ae0915d2244fe46fd36dc5e1d82058b41b8de73408017e38a_prof);
+        $__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522->leave($__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522_prof);
 
     }
 
@@ -106,7 +113,7 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
 
     public function getDebugInfo()
     {
-        return array (  84 => 31,  75 => 19,  72 => 17,  66 => 13,  63 => 12,  60 => 11,  57 => 9,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  88 => 33,  84 => 31,  75 => 19,  72 => 17,  66 => 13,  63 => 12,  60 => 11,  57 => 9,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -123,7 +130,7 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
 
 {% block body %}
     <div class=\"jumbotron\">
-        <h2>Please login!</h2>
+        <h2>Welcome to the Pages:login page</h2>
     </div>
 
     {% if error %}
@@ -149,6 +156,10 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
                 is redirected to on success (more details below)
                 <input type=\"hidden\" name=\"_target_path\" value=\"/account\" />
             #}
+
+            <input type=\"hidden\" name=\"_csrf_token\"
+                   value=\"{{ csrf_token('authenticate') }}\"
+            >
 
             <button type=\"submit\" class=\"btn btn-secondary\">login<i class=\"fa fa-lock\" aria-hidden=\"true\"></i></button>
         </form>
