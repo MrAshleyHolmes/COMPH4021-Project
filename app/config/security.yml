@@ -15,6 +15,7 @@ security:
             entity:
                 class: AppBundle:User
             # entity: { class: AppBundle:User, property: email }
+    access_denied_url: /
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -34,3 +35,7 @@ security:
             anonymous: ~
 
     access_control:
+        - { path: ^/profile/view, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/profile/edit, roles: ROLE_USER }
+        - { path: ^/orders, roles: ROLE_ADMIN }
+        - { path: ^/admin, roles: ROLE_SUPER_ADMIN }
