@@ -21,33 +21,33 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971->enter($__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
+        $__internal_c61a0e793f4b3b6343ad0f7f6bc4ed2cc0bbbc305b1b6d43edb7d592db5e2cd8 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c61a0e793f4b3b6343ad0f7f6bc4ed2cc0bbbc305b1b6d43edb7d592db5e2cd8->enter($__internal_c61a0e793f4b3b6343ad0f7f6bc4ed2cc0bbbc305b1b6d43edb7d592db5e2cd8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
 
-        $__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae->enter($__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
+        $__internal_121cd58adc03d201d418089b9d30662755e5d9b1d331a0eae64639a0580521f0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_121cd58adc03d201d418089b9d30662755e5d9b1d331a0eae64639a0580521f0->enter($__internal_121cd58adc03d201d418089b9d30662755e5d9b1d331a0eae64639a0580521f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "security/login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971->leave($__internal_829f9590d0ddedf12d82da61386e77a579b2c9c2df1fae1a82e1ee73367c5971_prof);
+        $__internal_c61a0e793f4b3b6343ad0f7f6bc4ed2cc0bbbc305b1b6d43edb7d592db5e2cd8->leave($__internal_c61a0e793f4b3b6343ad0f7f6bc4ed2cc0bbbc305b1b6d43edb7d592db5e2cd8_prof);
 
         
-        $__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae->leave($__internal_269a64f37c38d66e9fb3d65bee5b052cf50e4db9f7ab07e3e2d92ef322e56dae_prof);
+        $__internal_121cd58adc03d201d418089b9d30662755e5d9b1d331a0eae64639a0580521f0->leave($__internal_121cd58adc03d201d418089b9d30662755e5d9b1d331a0eae64639a0580521f0_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522->enter($__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_246cf2023374807dce0cff52ea4e2eb68edebc0d84e98aaad9851347bdc4c255 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_246cf2023374807dce0cff52ea4e2eb68edebc0d84e98aaad9851347bdc4c255->enter($__internal_246cf2023374807dce0cff52ea4e2eb68edebc0d84e98aaad9851347bdc4c255_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348->enter($__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_7e5ae71088318df3aa8bd8e87f42df9ecb0663613fe41a2bd8d6dd64fc16d277 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7e5ae71088318df3aa8bd8e87f42df9ecb0663613fe41a2bd8d6dd64fc16d277->enter($__internal_7e5ae71088318df3aa8bd8e87f42df9ecb0663613fe41a2bd8d6dd64fc16d277_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <div class=\"jumbotron\">
-        <h2>Welcome to the Pages:login page</h2>
+        <h2>Welcome to the Pages: login page</h2>
     </div>
 
     ";
@@ -60,18 +60,44 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
             echo "    ";
         }
         // line 12
-        echo "    <div class=\"form\">
-        <form action=\"";
+        echo "
+    ";
         // line 13
+        if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "flashbag", array()), "has", array(0 => "success"), "method")) {
+            // line 14
+            echo "        <div class=\"alert alert-success\">
+            ";
+            // line 15
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "flashbag", array()), "get", array(0 => "success"), "method"));
+            foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+                // line 16
+                echo "                ";
+                echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+                echo "
+            ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 18
+            echo "        </div>
+    ";
+        }
+        // line 20
+        echo "
+    <div class=\"form\">
+        <form action=\"";
+        // line 22
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login_check");
         echo "\" method=\"post\">
             <div class=\"form-group\">
                 <label for=\"email\">Username or Email:</label>
                 ";
-        // line 17
+        // line 26
         echo "                <input type=\"text\" id=\"email\" name=\"_email\"
                 ";
-        // line 19
+        // line 28
         echo "                       class=\"form-control\"/>
             </div>
             <div class=\"form-group\">
@@ -80,11 +106,11 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
                        class=\"form-control\"/>
             </div>
             ";
-        // line 31
+        // line 40
         echo "
             <input type=\"hidden\" name=\"_csrf_token\"
                    value=\"";
-        // line 33
+        // line 42
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\"
             >
@@ -94,10 +120,10 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
     </div>
 ";
         
-        $__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348->leave($__internal_2d0a0c912d1acf6afa3964aa65545bcdb2a3b5a69a6231abb881bebabda02348_prof);
+        $__internal_7e5ae71088318df3aa8bd8e87f42df9ecb0663613fe41a2bd8d6dd64fc16d277->leave($__internal_7e5ae71088318df3aa8bd8e87f42df9ecb0663613fe41a2bd8d6dd64fc16d277_prof);
 
         
-        $__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522->leave($__internal_9f501bcb6613980b5b11cfbefeee0ac7a7084e3570e5cc82dcc0657980114522_prof);
+        $__internal_246cf2023374807dce0cff52ea4e2eb68edebc0d84e98aaad9851347bdc4c255->leave($__internal_246cf2023374807dce0cff52ea4e2eb68edebc0d84e98aaad9851347bdc4c255_prof);
 
     }
 
@@ -113,7 +139,7 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
 
     public function getDebugInfo()
     {
-        return array (  88 => 33,  84 => 31,  75 => 19,  72 => 17,  66 => 13,  63 => 12,  60 => 11,  57 => 9,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  114 => 42,  110 => 40,  101 => 28,  98 => 26,  92 => 22,  88 => 20,  84 => 18,  75 => 16,  71 => 15,  68 => 14,  66 => 13,  63 => 12,  60 => 11,  57 => 9,  55 => 8,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -130,13 +156,22 @@ class __TwigTemplate_12f9825b1d022b39d19cebfa5445879f7fc0ec3ecbfb7092e4f368a7cdc
 
 {% block body %}
     <div class=\"jumbotron\">
-        <h2>Welcome to the Pages:login page</h2>
+        <h2>Welcome to the Pages: login page</h2>
     </div>
 
     {% if error %}
         <div class=\"alert alert-danger\" role=\"alert\">We have no match for that user and password</div>
         {#<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>#}
     {% endif %}
+
+    {% if app.session.flashbag.has('success') %}
+        <div class=\"alert alert-success\">
+            {% for message in app.session.flashbag.get('success') %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <div class=\"form\">
         <form action=\"{{ path('login_check') }}\" method=\"post\">
             <div class=\"form-group\">

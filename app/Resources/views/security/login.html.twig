@@ -2,13 +2,22 @@
 
 {% block body %}
     <div class="jumbotron">
-        <h2>Welcome to the Pages:login page</h2>
+        <h2>Welcome to the Pages: login page</h2>
     </div>
 
     {% if error %}
         <div class="alert alert-danger" role="alert">We have no match for that user and password</div>
         {#<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>#}
     {% endif %}
+
+    {% if app.session.flashbag.has('success') %}
+        <div class="alert alert-success">
+            {% for message in app.session.flashbag.get('success') %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <div class="form">
         <form action="{{ path('login_check') }}" method="post">
             <div class="form-group">

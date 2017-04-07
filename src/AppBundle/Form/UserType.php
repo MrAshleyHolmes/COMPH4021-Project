@@ -29,7 +29,7 @@ class UserType extends AbstractType
                 'label' => "First Name",
                 'required' => true,
                 'attr' => array(
-                    'placeholder' => "First Name",
+                    'placeholder' => "Firstname",
                     'class' => "form-control"
                 )
             ))

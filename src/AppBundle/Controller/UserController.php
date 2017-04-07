@@ -248,7 +248,7 @@ class UserController extends Controller
         // Add submit button
         $passwordForm->add('submit', SubmitType::class, array(
             'label' => 'Save New Password',
-            'attr' => array('class' => ''),
+            'attr' => array('class' => 'btn btn-default btn-lg'),
         ));
         return $passwordForm;
     }
