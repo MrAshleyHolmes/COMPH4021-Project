@@ -2,8 +2,24 @@
 
 {% block body %}
     <div class="jumbotron">
-        <h2>User</h2>
+        <h2>Welcome to the Pages: user</h2>
     </div>
+
+    {% if app.session.flashbag.has('danger') %}
+        <div class="alert alert-danger">
+        {% for message in app.session.flashbag.get('danger') %}
+            {{ message }}
+        {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if app.session.flashbag.has('success') %}
+        <div class="alert alert-danger">
+            {% for message in app.session.flashbag.get('success') %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
 
     <table class="records_list table table-bordered table-striped">
         <tbody>
@@ -34,22 +50,34 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('admin_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('admin_edit', { 'id': user.id }) }}">Edit</a>
-        </li>
-        <li>
-            <a href="{{ path('admin_password', { 'id': user.id }) }}">Change Password</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-            <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+    {#{% if 'ROLE_SUPER_ADMIN' not in user.roles %}#}
+        {#<a href="{{ path('admin_edit', { 'id': user.id }) }}" class="btn btn-default btn-lg">Edit</a>#}
+    {#{% endif %}#}
+
+    <a href="{{ path('admin_index') }}" class="btn btn-default btn-lg">Back to list</a>
+
+    {% if 'ROLE_SUPER_ADMIN' not in user.roles %}
+        <a href="{{ path('admin_edit', { 'id': user.id }) }}" class="btn btn-default btn-lg">Edit</a>
+        <a href="{{ path('admin_password', { 'id': user.id }) }}" class="btn btn-default btn-lg">Change Password</a>
+        <input type="submit" value="Delete" class="btn btn-default btn-lg">
+    {% endif %}
+
+    {#<ul>#}
+        {#<li>#}
+            {#<a href="{{ path('admin_index') }}">Back to the list</a>#}
+        {#</li>#}
+        {#<li>#}
+            {#<a href="{{ path('admin_edit', { 'id': user.id }) }}">Edit</a>#}
+        {#</li>#}
+        {#<li>#}
+            {#<a href="{{ path('admin_password', { 'id': user.id }) }}">Change Password</a>#}
+        {#</li>#}
+        {#<li>#}
+            {#{{ form_start(delete_form) }}#}
+            {#<input type="submit" value="Delete">#}
+            {#{{ form_end(delete_form) }}#}
+        {#</li>#}
+    {#</ul>#}
 {% endblock %}
 
 {#{% extends 'base.html.twig' %}#}

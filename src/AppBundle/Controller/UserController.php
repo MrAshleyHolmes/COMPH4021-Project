@@ -99,8 +99,17 @@ class UserController extends Controller
      * @Route("/{id}/edit", name="admin_edit")
      * @Method({"GET", "POST"})
      */
-    public function editAction(Request $request, User $user)
+    public function editAction($id, Request $request, User $user)
     {
+        if (in_array('ROLE_SUPER_ADMIN', $user->getRoles())) {
+
+            $request->getSession()
+                    ->getFlashbag()
+                    ->add('danger', 'Super Admin Profiles can not be edited in the Admin area!');
+
+            return $this->redirect($this->generateUrl('admin_show', array('id' => $id)));
+        }
+
         $deleteForm = $this->createDeleteForm($user);
         $editForm = $this->createForm('AppBundle\Form\UserType', $user);
 
@@ -139,12 +148,22 @@ class UserController extends Controller
      * @Route("/{id}", name="admin_delete")
      * @Method("DELETE")
      */
-    public function deleteAction(Request $request, User $user)
+    public function deleteAction($id, Request $request, User $user)
     {
         $form = $this->createDeleteForm($user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            if (in_array('ROLE_SUPER_ADMIN', $user->getRoles())) {
+
+                $request->getSession()
+                    ->getFlashbag()
+                    ->add('danger', 'Super Admin Profiles can not be edited in the Admin area!');
+
+                return $this->redirect($this->generateUrl('admin_show', array('id' => $id)));
+            }
+
             $em = $this->getDoctrine()->getManager();
             $em->remove($user);
             $em->flush($user);
@@ -178,7 +197,7 @@ class UserController extends Controller
      * @Template()
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function passwordAction($id)
+    public function passwordAction($id, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository('AppBundle:User')->find($id);
@@ -187,6 +206,15 @@ class UserController extends Controller
             throw $this->createNotFoundException(
                 'No product found for id ' . $user
             );
+        }
+
+        if (in_array('ROLE_SUPER_ADMIN', $user->getRoles())) {
+
+            $request->getSession()
+                ->getFlashbag()
+                ->add('danger', 'Super Admin Passwords can not be edited in the Admin area!');
+
+            return $this->redirect($this->generateUrl('admin_show', array('id' => $id)));
         }
 
         $passwordForm = $this->createPasswordForm($user);

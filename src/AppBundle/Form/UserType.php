@@ -21,7 +21,7 @@ class UserType extends AbstractType
             'label' => "Username",
             'required' => true,
             'attr' => array(
-                'placeholder' => "Enter Username",
+                'placeholder' => "Username",
                 'class' => "form-control"
             )
         ))
@@ -29,7 +29,7 @@ class UserType extends AbstractType
                 'label' => "First Name",
                 'required' => true,
                 'attr' => array(
-                    'placeholder' => "Enter Firstname",
+                    'placeholder' => "First Name",
                     'class' => "form-control"
                 )
             ))
@@ -37,7 +37,7 @@ class UserType extends AbstractType
                 'label' => "Last Name",
                 'required' => true,
                 'attr' => array(
-                    'placeholder' => "Enter Last Name",
+                    'placeholder' => "Last Name",
                     'class' => "form-control"
                 )
             ))
@@ -45,7 +45,7 @@ class UserType extends AbstractType
                 'label' => "Email",
                 'required' => true,
                 'attr' => array(
-                    'placeholder' => "Enter Email",
+                    'placeholder' => "Email",
                     'class' => "form-control"
                 )
             ))
@@ -53,7 +53,7 @@ class UserType extends AbstractType
                 'label' => "Password",
                 'required' => true,
                 'attr' => array(
-                    'placeholder' => "Enter Password",
+                    'placeholder' => "Password",
                     'class' => "form-control"
                 )
             ))
