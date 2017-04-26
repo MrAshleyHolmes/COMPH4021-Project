@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="398b92a5-2cee-4ad0-bf2d-91d52b3df484" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Question.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Tag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Task.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/QuestionFormType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ExamFormType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ExamFormType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Pages/orders.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Pages/orders.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/O/0/0xtWr+NlJCGQr4cAB64Q" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/O/0/0xtWr+NlJCGQr4cAB64Q" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Q/A/LN+DQG1EKVI3UECgdcnC" afterPath="$PROJECT_DIR$/var/cache/dev/pools/rGJdopL22i/Q/A/LN+DQG1EKVI3UECgdcnC" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/2b/2be1946e693ce3f8189459360129430b7df798d4a5e583ee6093d260e4c6ec5f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/2b/2be1946e693ce3f8189459360129430b7df798d4a5e583ee6093d260e4c6ec5f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/9f/9f3502047d768372a1b1962638ab8185edcb371a1cd70f1fb9cdb469b81d1b99.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/9f/9f3502047d768372a1b1962638ab8185edcb371a1cd70f1fb9cdb469b81d1b99.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -462,7 +443,7 @@
       <workItem from="1491302712066" duration="61226000" />
       <workItem from="1492997871870" duration="219000" />
       <workItem from="1492998325147" duration="7172000" />
-      <workItem from="1493040282069" duration="38411000" />
+      <workItem from="1493040282069" duration="38494000" />
     </task>
     <task id="LOCAL-00001" summary="twenty second commit">
       <created>1492998428763</created>
@@ -496,7 +477,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181317000" />
+    <option name="totallyTimeSpent" value="181400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
