@@ -115,6 +115,27 @@
                         {{ form_end(examForm) }}
                 {#<h3>We use css to change the background color of the content to be equal to the tab</h3>#}
             </div>
+            <div class="tab-pane" id="5a">
+                <h3>Step 5</h3>
+                {{ form_row(examForm.examinerInstructions, {
+                    'label': 'Examiner Instructions'
+                }) }}
+                {{ form_row(examForm.firstInstruction, {
+                    'label': 'Examiner Instructions'
+                }) }}
+                {{ form_row(examForm.secondInstruction, {
+                    'label': 'Examiner Instructions'
+                }) }}
+                {{ form_row(examForm.thirdInstruction, {
+                    'label': 'Examiner Instructions'
+                }) }}
+                {{ form_row(examForm.fourthInstruction, {
+                    'label': 'Examiner Instructions'
+                }) }}
+                <button type="submit" class="btn btn-primary" formnovalidate>Save</button>
+                {{ form_end(examForm) }}
+                {#<h3>We use css to change the background color of the content to be equal to the tab</h3>#}
+            </div>
         </div>
     </div>
 

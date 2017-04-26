@@ -5,7 +5,6 @@ namespace AppBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\TimeType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -174,7 +173,8 @@ class ExamFormType extends AbstractType
                 'choices' => [
                     'Choose Internal Examiner' => null,
                     'Mr. Stephen Sheridan' => 'Mr. Stephen Sheridan',
-                    '' => '',
+                    'Dr. Christina Thorpe' => 'Dr. Christina Thorpe',
+                    'Dr. Anthony Keane' => 'Dr. Anthony Keane',
                 ]
             ])
             ->add('externalExaminer', ChoiceType::class, [

@@ -1,6 +1,6 @@
 <?php
 
-/* user/new.html.twig */
+/* user/task.html.twig */
 class __TwigTemplate_dbb6e80a0eee355b47de43b57f7243b84ad81768c27262f21a5725ce351b6603 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_dbb6e80a0eee355b47de43b57f7243b84ad81768c27262f21a5725ce351
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "user/new.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "user/task.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
@@ -22,10 +22,10 @@ class __TwigTemplate_dbb6e80a0eee355b47de43b57f7243b84ad81768c27262f21a5725ce351
     protected function doDisplay(array $context, array $blocks = array())
     {
         $__internal_690713c089d9546070510b45018835fd2497035d0a7f77d3e894f74670bcdbb1 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_690713c089d9546070510b45018835fd2497035d0a7f77d3e894f74670bcdbb1->enter($__internal_690713c089d9546070510b45018835fd2497035d0a7f77d3e894f74670bcdbb1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/new.html.twig"));
+        $__internal_690713c089d9546070510b45018835fd2497035d0a7f77d3e894f74670bcdbb1->enter($__internal_690713c089d9546070510b45018835fd2497035d0a7f77d3e894f74670bcdbb1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/task.html.twig"));
 
         $__internal_11badf084a60b6bbe1090ea2c79f98ed2c649ffb20d3796f886f498bbf7002d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_11badf084a60b6bbe1090ea2c79f98ed2c649ffb20d3796f886f498bbf7002d8->enter($__internal_11badf084a60b6bbe1090ea2c79f98ed2c649ffb20d3796f886f498bbf7002d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/new.html.twig"));
+        $__internal_11badf084a60b6bbe1090ea2c79f98ed2c649ffb20d3796f886f498bbf7002d8->enter($__internal_11badf084a60b6bbe1090ea2c79f98ed2c649ffb20d3796f886f498bbf7002d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "user/task.html.twig"));
 
         // line 2
         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->setTheme(($context["form"] ?? $this->getContext($context, "form")), array(0 => "form/formthemeoverwrite.html.twig"));
@@ -160,7 +160,7 @@ class __TwigTemplate_dbb6e80a0eee355b47de43b57f7243b84ad81768c27262f21a5725ce351
 
     public function getTemplateName()
     {
-        return "user/new.html.twig";
+        return "user/task.html.twig";
     }
 
     public function isTraitable()
@@ -247,6 +247,6 @@ class __TwigTemplate_dbb6e80a0eee355b47de43b57f7243b84ad81768c27262f21a5725ce351
         {#</li>#}
     {#</ul>#}
 {#{% endblock %}#}
-", "user/new.html.twig", "/Users/ashleyholmes/Sites/COMPH4021-Project/app/Resources/views/user/new.html.twig");
+", "user/task.html.twig", "/Users/ashleyholmes/Sites/COMPH4021-Project/app/Resources/views/user/task.html.twig");
     }
 }

@@ -160,6 +160,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
+        // app_task_new
+        if ($pathinfo === '/task') {
+            return array (  '_controller' => 'AppBundle\\Controller\\TaskController::newAction',  '_route' => 'app_task_new',);
+        }
+
         if (0 === strpos($pathinfo, '/admin')) {
             // admin_index
             if (rtrim($pathinfo, '/') === '/admin') {
