@@ -160,9 +160,14 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // app_task_new
+        // app_pages_task
         if ($pathinfo === '/task') {
-            return array (  '_controller' => 'AppBundle\\Controller\\TaskController::newAction',  '_route' => 'app_task_new',);
+            return array (  '_controller' => 'AppBundle\\Controller\\TaskController::newAction',  '_route' => 'app_pages_task',);
+        }
+
+        // task_edit
+        if (preg_match('#^/(?P<id>[^/]++)/task_edit$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'task_edit')), array (  '_controller' => 'AppBundle\\Controller\\TaskController::editAction',));
         }
 
         if (0 === strpos($pathinfo, '/admin')) {

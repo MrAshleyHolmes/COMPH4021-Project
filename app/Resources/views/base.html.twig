@@ -52,7 +52,8 @@
                 <li><a href="{{ path('app_pages_contact') }}">Contact</a></li>
                 <li><a href="{{ path('app_pages_profile') }}">Profile</a></li>
                 {% if is_granted('ROLE_ADMIN') %}
-                    <li><a href="{{ path('app_pages_orders') }}">Orders</a></li>
+                    <li><a href="{{ path('app_pages_orders') }}">Covers</a></li>
+                    <li><a href="{{ path('app_pages_task') }}">Tasks</a></li>
                 {% endif %}
             </ul>
             <ul class="nav navbar-right navbar-nav">

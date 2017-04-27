@@ -22,7 +22,7 @@ class CoverPage
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
-    private $id;
+    protected $id;
 
     /**
      * @Assert\NotBlank(message="You need to select a year")

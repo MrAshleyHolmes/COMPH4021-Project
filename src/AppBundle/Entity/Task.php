@@ -5,12 +5,12 @@
  * Date: 25/04/2017
  * Time: 00:27
  */
+
 namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
 /**
  * @ORM\Entity
  * @ORM\Table(name="task")
@@ -25,16 +25,20 @@ class Task
     protected $id;
 
     /**
+     * His name is my question
+     *
      * @ORM\Column(type="string")
      */
-    protected $description;
+    protected $question;
 
     /**
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Tag", mappedBy="task")
-     * @ORM\Column(type="string")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Tag", mappedBy="task", cascade={"persist"})
      */
-    protected $tags;
+    private $tags;
 
+    /**
+     * Task constructor.
+     */
     public function __construct()
     {
         $this->tags = new ArrayCollection();
@@ -43,17 +47,20 @@ class Task
     /**
      * @return mixed
      */
-    public function getDescription()
+    public function getQuestion()
     {
-        return $this->description;
+        return $this->question;
     }
 
     /**
-     * @param mixed $description
+     * @param $question
+     * @return $this
      */
-    public function setDescription($description)
+    public function setQuestion($question)
     {
-        $this->description = $description;
+        $this->question = $question;
+
+        return $this;
     }
 
     /**
@@ -71,6 +78,7 @@ class Task
     public function addTag(Tag $tag)
     {
         if (!$this->tags->contains($tag)) {
+            $tag->setTask($this);
             $this->tags->add($tag);
         }
         return $this->tags;
@@ -82,17 +90,21 @@ class Task
      */
     public function removeTag(Tag $tag)
     {
-        if (!$this->tags->contains($tag)) {
-            $this->tags->remove($tag);
+        if ($this->tags->contains($tag)) {
+            $this->tags->removeElement($tag);
         }
+
         return $this->tags;
     }
 
     /**
      * @param Collection $tags
+     * @return $this
      */
     public function setTags(Collection $tags)
     {
         $this->tags = $tags;
+
+        return $this;
     }
 }
